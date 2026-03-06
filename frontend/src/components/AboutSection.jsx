@@ -21,23 +21,14 @@ const AboutSection = () => {
 
             {/* Paragraph 1 */}
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Nestled in Mysuru for {companyInfo.yearsOfExperience} years,
-              Royal Realities Mysuru stands as a beacon of excellence in
-              plotted development. Our projects seamlessly blend modern living
-              with nature, offering meticulously planned spaces that transcend
-              mere pieces of land. With over{" "}
-              {companyInfo.satisfiedClients.toLocaleString()} delighted
-              customers, our commitment to quality, transparency, and customer
-              satisfaction is unwavering.
+              Royal Realities Mysuru has been in the real estate field for more than {companyInfo.yearsOfExperience} years,
+              building trust and delivering quality developments. What started as a small-scale venture has today grown into a recognized brand in the industry. We specialize in buying land, developing layouts, marketing, and selling residential and investment plots. With dedication and transparency, we have successfully served{" "}
+              {companyInfo.satisfiedClients.toLocaleString()} happy customers.
             </p>
 
             {/* Paragraph 2 */}
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Strategically located in Mysuru, our plots strike the perfect
-              balance between urban convenience and serenity. As we envision a
-              future in sustainable development, Royal Realities Mysuru invites
-              you to join our community, where dreams take root on plots that
-              go beyond investments, becoming gateways to a life well-lived.
+              Our journey began with our first projects in Mandya, after which we expanded our developments across Mysuru. We focus on creating well-planned plots in promising locations that offer both living and investment opportunities. With strong market knowledge and a customer-first approach, we aim to make property buying simple, safe, and valuable, and we are now planning to expand our projects into Bangalore in the near future.
             </p>
 
             {/* Final Line */}

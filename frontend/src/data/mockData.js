@@ -6,8 +6,8 @@ export const companyInfo = {
   phone: "+91 9876543210",
   email: "info@royalrealitiesmysuru.com",
   address: "No. 123, 2nd Floor, Irwin Road, Mysore - 570001, Karnataka",
-  satisfiedClients: 3500,
-  yearsOfExperience: 6
+  satisfiedClients: 1500,
+  yearsOfExperience: 22
 };
 
 export const projects = [
