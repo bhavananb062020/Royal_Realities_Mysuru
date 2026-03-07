@@ -30,7 +30,7 @@ const ContactSection = () => {
     }
 
     try {
-      const res = await fetch("http://api.royalrealitiesmysuru.in:5000/api/contact", {
+      const res = await fetch("https://api.royalrealitiesmysuru.in:5000/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
