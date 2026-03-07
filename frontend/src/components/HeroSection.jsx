@@ -20,31 +20,65 @@ const HeroSection = () => {
     acceptTerms: false,
   });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
 
-    if (!formData.acceptTerms) {
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  if (!formData.acceptTerms) {
+    toast({
+      title: "Error",
+      description: "Please accept the terms",
+      variant: "destructive",
+    });
+    return;
+  }
+
+  try {
+
+    const res = await fetch("http://localhost:5000/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await res.json();
+
+    if (res.ok) {
+
+      toast({
+        title: "Success",
+        description: "We will contact you soon",
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        acceptTerms: false,
+      });
+
+    } else {
+
       toast({
         title: "Error",
-        description: "Please accept the terms",
+        description: data.message || "Something went wrong",
         variant: "destructive",
       });
-      return;
+
     }
 
+  } catch (error) {
+
     toast({
-      title: "Success",
-      description: "We will contact you soon",
+      title: "Server Error",
+      description: "Could not connect to server",
+      variant: "destructive",
     });
 
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      acceptTerms: false,
-    });
-  };
-
+  }
+};
   return (
     <section
       id="home"

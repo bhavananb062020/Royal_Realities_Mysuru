@@ -17,27 +17,44 @@ const ContactSection = () => {
     acceptTerms: false
   });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
     if (!formData.acceptTerms) {
       toast({
         title: "Error",
-        description: "Please accept the terms and conditions",
-        variant: "destructive"
+        description: "Please accept the terms",
+        variant: "destructive",
       });
       return;
     }
-    // Store in localStorage for now
-    const contacts = JSON.parse(localStorage.getItem('contacts') || '[]');
-    contacts.push({ ...formData, timestamp: new Date().toISOString() });
-    localStorage.setItem('contacts', JSON.stringify(contacts));
-    
-    toast({
-      title: "Success!",
-      description: "Thank you for contacting us. We'll get back to you soon."
-    });
-    
-    setFormData({ name: '', email: '', phone: '', message: '', acceptTerms: false });
+
+    try {
+      const res = await fetch("http://localhost:5000/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        toast({
+          title: "Success",
+          description: "We will contact you soon",
+        });
+
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+          acceptTerms: false,
+        });
+      }
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (
