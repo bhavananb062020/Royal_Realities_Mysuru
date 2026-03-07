@@ -6,7 +6,7 @@ const sendEmail = async (data) => {
 
   await resend.emails.send({
     from:"Royal Realities <contact@royalrealitiesmysuru.in>",
-    to: process.env.EMAIL_USER,
+    to: "bhavananb2003@gmail.com",
     subject: "New Property Inquiry",
     html: `
       <h3>New Inquiry</h3>
