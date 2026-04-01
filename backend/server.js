@@ -7,7 +7,16 @@ const contactRoutes = require("./routes/contactRoutes");
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    "https://royalrealitiesmysuru.in",
+    "https://www.royalrealitiesmysuru.in",
+    "https://royalrealitiesmysuru.pages.dev"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  credentials: true
+}));
+
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI)
