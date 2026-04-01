@@ -35,7 +35,7 @@ const HeroSection = () => {
 
   try {
 
-    const res = await fetch("https://royal-realities-mysuru.onrender.com/api/contact", {
+    const res = await fetch("https://api.royalrealitiesmysuru.in/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
