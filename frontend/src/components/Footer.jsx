@@ -49,7 +49,9 @@ const Footer = () => {
             </a>
 
             <a
-              href="#"
+              href="https://www.linkedin.com/company/royal-realities-mysuru/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white w-12 h-12 flex items-center justify-center rounded-full hover:scale-110 transition"
             >
               <Linkedin className="text-blue-700 w-6 h-6" />
