@@ -1,9 +1,16 @@
 // Mock data for Royal Realities Mysuru
 
+import img1 from "../assets/2.jpeg";
+import img2 from "../assets/3.jpeg";
+import img3 from "../assets/4.jpeg";
+import img4 from "../assets/6.jpeg";
+import img5 from "../assets/1.jpeg";
+import img6 from "../assets/7.jpeg";
+
 export const companyInfo = {
   name: "Royal Realities Mysuru",
   tagline: "Where Plots Transform into Destinies",
-  phone: "+91 9876543210",
+  phone: "+91 6361766997",
   email: "info@royalrealitiesmysuru.com",
   address: "No. 123, 2nd Floor, Irwin Road, Mysore - 570001, Karnataka",
   satisfiedClients: 1500,
@@ -142,32 +149,32 @@ export const faqs = [
 export const galleryImages = [
   {
     id: 1,
-    url: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5",
+    url: img1,
     alt: "Construction site"
   },
   {
     id: 2,
-    url: "https://images.unsplash.com/photo-1694521787162-5373b598945c",
+    url: img2,
     alt: "Project development"
   },
   {
     id: 3,
-    url: "https://images.pexels.com/photos/35300832/pexels-photo-35300832.jpeg",
+    url: img3,
     alt: "Building progress"
   },
   {
     id: 4,
-    url: "https://images.pexels.com/photos/26200673/pexels-photo-26200673.jpeg",
+    url: img4,
     alt: "Aerial view"
   },
   {
     id: 5,
-    url: "https://images.unsplash.com/photo-1573164574572-cb89e39749b4",
+    url: img5,
     alt: "Office meeting"
   },
   {
     id: 6,
-    url: "https://images.pexels.com/photos/1367274/pexels-photo-1367274.jpeg",
+    url: img6,
     alt: "Team discussion"
   }
 ];

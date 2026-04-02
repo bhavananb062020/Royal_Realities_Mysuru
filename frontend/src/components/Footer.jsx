@@ -29,11 +29,11 @@ const Footer = () => {
             </p>
 
             <p className="text-gray-300 mb-2">
-              +918339963996
+              +91 6361766997
             </p>
 
             <p className="text-gray-300">
-              geethanjali@ashwasuryarealities.com
+              info@royalrealitiesmysuru.com
             </p>
 
           </div>
@@ -63,7 +63,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="#"
+              href="https://instagram.com/royal_realities" target="_blank"
               className="bg-white w-12 h-12 flex items-center justify-center rounded-full hover:scale-110 transition"
             >
               <Instagram className="text-pink-600 w-6 h-6" />
