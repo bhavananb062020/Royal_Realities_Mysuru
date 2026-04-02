@@ -7,7 +7,7 @@ import { useToast } from "../hooks/use-toast";
 import * as yup from "yup";
 
 import logo from "../assets/logo-removebg.png";
-import whatsappIcon from "../assets/whatsappIcon.png";
+// import whatsappIcon from "../assets/whatsappIcon.png";
 import callIcon from "../assets/callIcon.png";
 
 const validationSchema = yup.object().shape({
