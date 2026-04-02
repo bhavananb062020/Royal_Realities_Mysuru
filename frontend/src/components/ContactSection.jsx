@@ -109,7 +109,9 @@ const ContactSection = () => {
                 <Phone className="w-6 h-6 text-amber-500 mr-4 mt-1" />
                 <div>
                   <h4 className="font-semibold">Phone</h4>
-                  <a href={`tel:${companyInfo.phone}`}>{companyInfo.phone}</a>
+                  <a href={`tel:${companyInfo.phone}`} className="hover:text-amber-500 transition">
+                    {companyInfo.phone}
+                  </a>
                 </div>
               </div>
 
@@ -117,8 +119,27 @@ const ContactSection = () => {
                 <Mail className="w-6 h-6 text-amber-500 mr-4 mt-1" />
                 <div>
                   <h4 className="font-semibold">Email</h4>
-                  <a href={`mailto:${companyInfo.email}`}>{companyInfo.email}</a>
+                  <a href={`mailto:${companyInfo.email}`} className="hover:text-amber-500 transition">
+                    {companyInfo.email}
+                  </a>
                 </div>
+              </div>
+            </div>
+
+            {/* GOOGLE MAP */}
+            <div className="mt-8">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Our Location</h3>
+              <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-200">
+                <iframe
+                  title="Royal Realities Mysuru Location"
+                  src="https://www.google.com/maps?q=Mysuru,Karnataka&z=15&output=embed"
+                  width="100%"
+                  height="280"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
           </div>
@@ -147,6 +168,7 @@ const ContactSection = () => {
               {/* EMAIL */}
               <div>
                 <Input
+                  type="email"
                   placeholder="Your Email"
                   value={formData.email}
                   onChange={(e) => {
@@ -162,6 +184,7 @@ const ContactSection = () => {
               {/* PHONE */}
               <div>
                 <Input
+                  type="tel"
                   placeholder="Your Phone"
                   value={formData.phone}
                   onChange={(e) => {
@@ -194,7 +217,7 @@ const ContactSection = () => {
               <div>
                 <div className="flex items-center space-x-2">
                   <Checkbox
-                  className="border-black data-[state=checked]:bg-black data-[state=checked]:text-white"
+                    className="border-black data-[state=checked]:bg-black data-[state=checked]:text-white"
                     checked={formData.acceptTerms}
                     onCheckedChange={(checked) => {
                       setFormData((prev) => ({
@@ -216,7 +239,7 @@ const ContactSection = () => {
                 )}
               </div>
 
-              <Button type="submit" className="w-full bg-amber-500 text-white">
+              <Button type="submit" className="w-full bg-amber-500 text-white hover:bg-amber-600">
                 Submit
               </Button>
 

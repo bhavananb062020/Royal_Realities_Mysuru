@@ -164,7 +164,7 @@ const HeroSection = () => {
       {/* HERO TEXT */}
       <div className="relative md:absolute md:top-[35%] left-6 md:left-16 z-20 text-white mt-32 md:mt-0 max-w-xl">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-wide">
-          PERFECT <span className="font-light">SPACES</span>
+          INVEST IN YOUR <span className="font-light">FUTURE HOME</span>
         </h1>
       </div>
 
