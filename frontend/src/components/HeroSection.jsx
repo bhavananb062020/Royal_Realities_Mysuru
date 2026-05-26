@@ -162,11 +162,31 @@ const HeroSection = () => {
       </div>
 
       {/* HERO TEXT */}
-      <div className="relative md:absolute md:top-[35%] left-6 md:left-16 z-20 text-white mt-32 md:mt-0 max-w-xl">
+      {/* <div className="relative md:absolute md:top-[35%] left-6 md:left-16 z-20 text-white mt-32 md:mt-0 max-w-xl">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-wide leading-tight">
-          INVEST IN YOUR
-          <span className="block font-light mt-2">FUTURE HOME</span>
+          TURING LAND 
+          <span className="block font-light mt-2">INTO LEGACY</span>
         </h1>
+      </div> */}
+      <div className="relative md:absolute md:top-[35%] left-6 md:left-16 z-20 text-white mt-32 md:mt-0 max-w-xl">
+
+        {/* Golden line */}
+        {/* <div className="w-20 h-[2px] bg-[#d4af37] mb-6"></div> */}
+
+        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-5xl leading-tight uppercase">
+
+          {/* Bold Text */}
+          <span className="block font-bold tracking-[3px] text-white">
+            TURNING LAND
+          </span>
+
+          {/* Elegant Thin Text */}
+          <span className="block font-light tracking-[6px] text-[#f3d38a] mt-3 text-3xl">
+            INTO LEGACY
+          </span>
+
+        </h1>
+
       </div>
 
       {/* CONTACT ICONS */}

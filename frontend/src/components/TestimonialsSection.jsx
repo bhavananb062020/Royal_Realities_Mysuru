@@ -25,12 +25,12 @@ const TestimonialsSection = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gray-50 rounded-lg p-8 md:p-12 shadow-lg">
+          <div className="bg-gray-50 rounded-xl p-8 md:p-12 shadow-lg">
             <div className="flex flex-col items-center">
               <img
                 src={currentTestimonial.image}
                 alt={currentTestimonial.name}
-                className="w-24 h-24 rounded-full object-cover mb-6 border-4 border-amber-500"
+                className="w-32 h-32 rounded-full object-cover mb-6 border-4 border-amber-500"
               />
               <div className="flex mb-4">
                 {[...Array(currentTestimonial.rating)].map((_, i) => (
