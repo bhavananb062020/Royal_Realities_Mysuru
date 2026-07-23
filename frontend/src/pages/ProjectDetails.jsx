@@ -4,6 +4,8 @@ import logo from "../assets/logo-removebg.png";
 import { projects } from "../data/mockData";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Tumbnail1 from "../assets/Tumbnail-1.jpeg";
+import Tumbnail2 from "../assets/Tumbnail-2.jpeg";
 
 const ProjectDetails = () => {
     const { id } = useParams();
@@ -20,7 +22,7 @@ const ProjectDetails = () => {
             </div>
         );
     }
-
+    const thumbnails = [Tumbnail1, Tumbnail2];
     return (
         <>
             <Header />
@@ -169,6 +171,7 @@ const ProjectDetails = () => {
                                             playsInline
                                             preload="metadata"
                                             className="w-full h-auto"
+                                            poster={thumbnails[index]}
                                         >
                                             <source src={video} type="video/mp4" />
                                         </video>
