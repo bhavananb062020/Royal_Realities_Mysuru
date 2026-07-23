@@ -26,7 +26,7 @@ const ProjectDetails = () => {
             <Header />
 
             <div className="bg-gray-50 min-h-screen">
-                
+
                 {/* Hero Banner */}
                 <div className="relative h-[60vh]">
 
@@ -42,7 +42,7 @@ const ProjectDetails = () => {
                     {/* Back Button */}
                     <button
                         onClick={() => navigate(-1)}
-                        className="absolute top-6 left-6 z-20 bg-white/20 backdrop-blur-md p-3 rounded-full hover:bg-amber-500 transition"
+                        className="absolute top-4 left-4 md:top-6 md:left-6 z-20 bg-black/40 backdrop-blur-md p-3 rounded-full hover:bg-amber-500 transition"
                     >
                         <ArrowLeft className="w-6 h-6 text-white" />
                     </button>
@@ -51,7 +51,7 @@ const ProjectDetails = () => {
                     <img
                         src={logo}
                         alt="Royal Realities"
-                        className="absolute top-5 left-24 h-20 md:h-24 z-20"
+                        className="hidden md:block absolute top-5 left-24 h-20 lg:h-24 z-20"
                     />
 
                     {/* Title */}
