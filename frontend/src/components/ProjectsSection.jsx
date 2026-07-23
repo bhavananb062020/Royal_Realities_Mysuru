@@ -56,14 +56,14 @@ const ProjectsSection = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <Button
             onClick={() => alert('View all projects page coming soon!')}
             className="bg-gray-800 hover:bg-gray-900 text-white px-8 py-3"
           >
             VIEW ALL PROJECTS
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
