@@ -42,7 +42,7 @@ const ProjectDetails = () => {
                     {/* Back Button */}
                     <button
                         onClick={() => navigate(-1)}
-                        className="absolute top-4 left-4 md:top-6 md:left-6 z-20 bg-black/40 backdrop-blur-md p-3 rounded-full hover:bg-amber-500 transition"
+                        className="hidden lg:flex absolute top-6 left-6 z-20 bg-black/40 backdrop-blur-md p-3 rounded-full hover:bg-amber-500 transition items-center justify-center"
                     >
                         <ArrowLeft className="w-6 h-6 text-white" />
                     </button>
