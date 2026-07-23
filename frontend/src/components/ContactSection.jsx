@@ -132,7 +132,7 @@ const ContactSection = () => {
               <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-200">
                 <iframe
                   title="Royal Realities Mysuru Location"
-                  src="https://www.google.com/maps?q=Mysuru,Karnataka&z=15&output=embed"
+                  src="https://www.google.com/maps?q=Maharaja+Complex,+Opp+to+Sub+Urban+Bus+Stop,+Mysuru,+Karnataka&z=17&output=embed"
                   width="100%"
                   height="280"
                   style={{ border: 0 }}

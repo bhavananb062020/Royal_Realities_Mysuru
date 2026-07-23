@@ -7,16 +7,23 @@ import img4 from "../assets/6.jpeg";
 import img5 from "../assets/1.jpeg";
 import img6 from "../assets/7.jpeg";
 
+import Project1 from "../assets/Project-1.jpeg";
+import Project2 from "../assets/Project-2.jpeg";
+
+
 import Sampath_Kumar from "../assets/Sampath-Kumar.jpeg";
 import Gajanan from "../assets/Gajanan.jpeg";
 import Vije_kumar from "../assets/Vije_kumar.jpeg";
+import Jagdeesh from "../assets/Jagdeesh.jpeg";
+import Sairaj from "../assets/Sairaj.jpeg";
+
 
 export const companyInfo = {
   name: "Royal Realities Mysuru",
   tagline: "Where Plots Transform into Destinies",
   phone: "+91 6361766997",
-  email: "info@royalrealitiesmysuru.com",
-  address: "No. 123, 2nd Floor, Irwin Road, Mysore - 570001, Karnataka",
+  email: "contact.royalrealitiesmysuru@gmail.com",
+  address: "Maharaja complex, Opp to sub urban bus stop, mysuru",
   satisfiedClients: 1500,
   yearsOfExperience: 22
 };
@@ -24,19 +31,19 @@ export const companyInfo = {
 export const projects = [
   {
     id: 1,
-    name: "Royal Signature",
+    name: "Royal Retreat",
     location: "Mysore Road",
     tagline: "Signature Living at Its Best",
-    image: "https://images.unsplash.com/photo-1605146769289-440113cc3d00",
+    image: Project1,
     status: "ongoing",
     description: "Premium plotted development with world-class amenities"
   },
   {
     id: 2,
-    name: "Royal Destiny Farm",
-    location: "Srirangapatna",
+    name: "Royal Enclave",
+    location: "Varuna",
     tagline: "Unearth the Magic of Our Farm Land",
-    image: "https://images.unsplash.com/photo-1764222233275-87dc016c11dc",
+    image: Project2,
     status: "ongoing",
     description: "Agricultural plots with rich soil and excellent connectivity"
   },
@@ -72,39 +79,39 @@ export const projects = [
 export const testimonials = [
   {
     id: 1,
-    name: "Mahesh",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150",
-    review: "Professional team, clear documentation, and excellent location selection. Investing with Royal Realities was the right decision.",
-    rating: 5
-  },
-  {
-    id: 2,
     name: "Sampath Kumar",
     image: Sampath_Kumar,
     review: "The entire process was smooth and transparent. Truly impressed with their commitment and customer support.",
     rating: 5
   },
   {
-    id: 3,
+    id: 2,
     name: "Vije Kumar",
     image: Vije_kumar,
     review: "A trusted name in Mysuru real estate. The project quality and future value exceeded my expectations.",
     rating: 5
   },
   {
-    id: 4,
+    id: 3,
     name: "Gajanan",
     image: Gajanan,
     review: "Royal Realities helped us find the perfect site for our dream home. Highly recommended.",
     rating: 5
   },
   {
-    id: 5,
-    name: "Karthik Gowda",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150",
+    id: 4,
+    name: "Jagdeesh",
+    image: Jagdeesh,
     review: "Luxury locations, genuine pricing, and excellent service. One of the best real estate brands in Mysuru.",
     rating: 5
-  }
+  },
+   {
+    id: 5,
+    name: "Sairaj",
+    image: Sairaj,
+    review: "Professional team, clear documentation, and excellent location selection. Investing with Royal Realities was the right decision.",
+    rating: 5
+  },
 ];
 
 export const faqs = [

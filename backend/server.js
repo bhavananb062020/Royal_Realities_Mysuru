@@ -9,6 +9,7 @@ const app = express();
 
 app.use(cors({
   origin: [
+    "http://localhost:5173",
     "https://royalrealitiesmysuru.in",
     "https://www.royalrealitiesmysuru.in",
     "https://royalrealitiesmysuru.pages.dev"

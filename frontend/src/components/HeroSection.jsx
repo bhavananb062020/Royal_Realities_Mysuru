@@ -83,6 +83,8 @@ const HeroSection = () => {
 
     const isValid = await validateForm();
     if (!isValid) return;
+    // http://localhost:5000/api/contact
+    // https://api.royalrealitiesmysuru.in/api/contact
 
     try {
       const res = await fetch("https://api.royalrealitiesmysuru.in/api/contact", {
