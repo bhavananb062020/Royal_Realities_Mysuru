@@ -10,6 +10,8 @@ import img6 from "../assets/7.jpeg";
 import Project1 from "../assets/Project-1.jpeg";
 import Project2 from "../assets/Project-2.jpeg";
 
+import video1 from "../assets/Project1.mp4";
+import video2 from "../assets/vedio-project-1.mp4";
 
 import Sampath_Kumar from "../assets/Sampath-Kumar.jpeg";
 import Gajanan from "../assets/Gajanan.jpeg";
@@ -36,7 +38,15 @@ export const projects = [
     tagline: "Signature Living at Its Best",
     image: Project1,
     status: "ongoing",
-    description: "Premium plotted development with world-class amenities"
+    description: "Premium plotted development with world-class amenities",
+    gallery: [
+     
+    ],
+     videos: [
+      video1,
+      video2
+    ]
+
   },
   {
     id: 2,
@@ -47,33 +57,33 @@ export const projects = [
     status: "ongoing",
     description: "Agricultural plots with rich soil and excellent connectivity"
   },
-  {
-    id: 3,
-    name: "Royal Lavish",
-    location: "Hunsur Road",
-    tagline: "Live Lavishly, Live Royally",
-    image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
-    status: "ongoing",
-    description: "Luxury residential plots with modern infrastructure"
-  },
-  {
-    id: 4,
-    name: "Royal Atharva",
-    location: "Ring Road",
-    tagline: "Crafting Happiness in Every Plot",
-    image: "https://images.pexels.com/photos/8470806/pexels-photo-8470806.jpeg",
-    status: "ongoing",
-    description: "Strategically located plots with excellent appreciation potential"
-  },
-  {
-    id: 5,
-    name: "Royal Lotus",
-    location: "Bannur Road",
-    tagline: "Invest Wisely for Your Loved Ones",
-    image: "https://images.pexels.com/photos/7578906/pexels-photo-7578906.jpeg",
-    status: "ongoing",
-    description: "Family-friendly plotted community with green spaces"
-  }
+  // {
+  //   id: 3,
+  //   name: "Royal Lavish",
+  //   location: "Hunsur Road",
+  //   tagline: "Live Lavishly, Live Royally",
+  //   image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
+  //   status: "ongoing",
+  //   description: "Luxury residential plots with modern infrastructure"
+  // },
+  // {
+  //   id: 4,
+  //   name: "Royal Atharva",
+  //   location: "Ring Road",
+  //   tagline: "Crafting Happiness in Every Plot",
+  //   image: "https://images.pexels.com/photos/8470806/pexels-photo-8470806.jpeg",
+  //   status: "ongoing",
+  //   description: "Strategically located plots with excellent appreciation potential"
+  // },
+  // {
+  //   id: 5,
+  //   name: "Royal Lotus",
+  //   location: "Bannur Road",
+  //   tagline: "Invest Wisely for Your Loved Ones",
+  //   image: "https://images.pexels.com/photos/7578906/pexels-photo-7578906.jpeg",
+  //   status: "ongoing",
+  //   description: "Family-friendly plotted community with green spaces"
+  // }
 ];
 
 export const testimonials = [

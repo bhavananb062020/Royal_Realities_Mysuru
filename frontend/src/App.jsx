@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import { Toaster } from "./components/ui/sonner";
+import ProjectDetails from "./pages/ProjectDetails";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/project/:id" element={<ProjectDetails />} />
         </Routes>
       </BrowserRouter>
       <Toaster />

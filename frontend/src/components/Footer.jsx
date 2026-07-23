@@ -33,7 +33,7 @@ const Footer = () => {
             </p>
 
             <p className="text-gray-300">
-              info@royalrealitiesmysuru.com
+              contact.royalrealitiesmysuru@gmail.com
             </p>
 
           </div>

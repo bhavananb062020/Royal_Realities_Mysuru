@@ -2,10 +2,13 @@ import React from 'react';
 import { projects } from '../data/mockData';
 import { Button } from './ui/button';
 import { MapPin } from 'lucide-react';
+import { useNavigate } from "react-router-dom";
 
 const ProjectsSection = () => {
-  const handleExplore = (projectName) => {
-    alert(`Exploring ${projectName}. Full project details will be available soon!`);
+  const navigate = useNavigate();
+
+  const handleExplore = (id) => {
+    navigate(`/project/${id}`);
   };
 
   return (
@@ -43,7 +46,7 @@ const ProjectsSection = () => {
                 <h4 className="text-xl font-semibold text-gray-800 mb-2">{project.tagline}</h4>
                 <p className="text-gray-600 mb-4">{project.description}</p>
                 <Button
-                  onClick={() => handleExplore(project.name)}
+                  onClick={() => handleExplore(project.id)}
                   className="w-full bg-amber-500 hover:bg-amber-600 text-white"
                 >
                   EXPLORE
