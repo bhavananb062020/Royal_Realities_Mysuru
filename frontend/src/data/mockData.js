@@ -10,8 +10,9 @@ import img6 from "../assets/7.jpeg";
 import Project1 from "../assets/Project-1.jpeg";
 import Project2 from "../assets/Project-2.jpeg";
 
-import video1 from "../assets/Project1.mp4";
-import video2 from "../assets/vedio-project-1.mp4";
+
+import video1 from "../assets/vedio-project-1.mp4";
+import video2 from "../assets/Project1.mp4";
 
 import Sampath_Kumar from "../assets/Sampath-Kumar.jpeg";
 import Gajanan from "../assets/Gajanan.jpeg";
@@ -44,7 +45,7 @@ export const projects = [
     ],
      videos: [
       video1,
-      video2
+      video2,
     ]
 
   },
