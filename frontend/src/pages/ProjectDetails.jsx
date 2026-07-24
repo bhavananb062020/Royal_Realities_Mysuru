@@ -4,6 +4,7 @@ import logo from "../assets/logo-removebg.png";
 import { projects } from "../data/mockData";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { useEffect } from "react";
 
 import Tumbnail1 from "../assets/Tumbnail-2.jpeg";
 import Tumbnail2 from "../assets/Tumbnail-1.jpeg";
@@ -11,6 +12,13 @@ import Tumbnail2 from "../assets/Tumbnail-1.jpeg";
 const ProjectDetails = () => {
     const { id } = useParams();
     const navigate = useNavigate();
+    useEffect(() => {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "auto",
+    });
+}, [id]);
     const project = projects.find(
         (p) => p.id.toString() === id
     );
