@@ -54,11 +54,9 @@ export const projects = [
     location: "Lalithadripuram",
     tagline: "Signature Living at Its Best",
     image: Project1,
-    status: "ongoing",
+    status: "completed",
     description: "Premium plotted development with world-class amenities",
-    gallery: [
-
-    ],
+    gallery: [],
     videos: [
       {
         src: video1,
@@ -76,7 +74,6 @@ export const projects = [
         thumbnail: Thumbnail3,
       },
     ]
-
   },
   {
     id: 2,
@@ -84,48 +81,44 @@ export const projects = [
     location: "Varuna",
     tagline: "Unearth the Magic of Our Farm Land",
     image: Project2,
-    status: "ongoing",
+    status: "completed",
     description: "Connected to the city, close to nature.",
     gallery: [
-    Enclave1,
-    Enclave2,
-    Enclave3,
-    Enclave4,
-    Enclave5,
-    Enclave6,
-    Enclave7,
-    Enclave8,
-    Enclave9,
-    Enclave10,
-  ],
+      Enclave1,
+      Enclave2,
+      Enclave3,
+      Enclave4,
+      Enclave5,
+      Enclave6,
+      Enclave7,
+      Enclave8,
+      Enclave9,
+      Enclave10,
+    ],
+    videos: []
   },
-  // {
-  //   id: 3,
-  //   name: "Royal Lavish",
-  //   location: "Hunsur Road",
-  //   tagline: "Live Lavishly, Live Royally",
-  //   image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
-  //   status: "ongoing",
-  //   description: "Luxury residential plots with modern infrastructure"
-  // },
-  // {
-  //   id: 4,
-  //   name: "Royal Atharva",
-  //   location: "Ring Road",
-  //   tagline: "Crafting Happiness in Every Plot",
-  //   image: "https://images.pexels.com/photos/8470806/pexels-photo-8470806.jpeg",
-  //   status: "ongoing",
-  //   description: "Strategically located plots with excellent appreciation potential"
-  // },
-  // {
-  //   id: 5,
-  //   name: "Royal Lotus",
-  //   location: "Bannur Road",
-  //   tagline: "Invest Wisely for Your Loved Ones",
-  //   image: "https://images.pexels.com/photos/7578906/pexels-photo-7578906.jpeg",
-  //   status: "ongoing",
-  //   description: "Family-friendly plotted community with green spaces"
-  // }
+  {
+    id: 3,
+    name: "Royal Vista",
+    location: "Ilwala",
+    tagline: "Where Every View Feels Like Home",
+    image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
+    status: "upcoming",
+    description: "Premium plotted development launching soon with modern infrastructure and scenic surroundings.",
+    gallery: [],
+    videos: []
+  },
+  {
+    id: 4,
+    name: "Royal Meadows",
+    location: "Murdagahalli",
+    tagline: "A Fresh Beginning Amidst Nature",
+    image: "https://images.pexels.com/photos/8470806/pexels-photo-8470806.jpeg",
+    status: "upcoming",
+    description: "Thoughtfully planned green residential plots, coming soon to a prime location.",
+    gallery: [],
+    videos: []
+  },
 ];
 
 export const testimonials = [
