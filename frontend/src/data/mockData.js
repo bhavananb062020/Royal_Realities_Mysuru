@@ -13,6 +13,8 @@ import Project2 from "../assets/Project-2.jpeg";
 
 import video1 from "../assets/vedio-project-1.mp4";
 import video2 from "../assets/Project1.mp4";
+import video3 from "../assets/Vedio2-project1.mp4";
+
 
 import Sampath_Kumar from "../assets/Sampath-Kumar.jpeg";
 import Gajanan from "../assets/Gajanan.jpeg";
@@ -20,6 +22,9 @@ import Vije_kumar from "../assets/Vije_kumar.jpeg";
 import Jagdeesh from "../assets/Jagdeesh.jpeg";
 import Sairaj from "../assets/Sairaj.jpeg";
 
+import Thumbnail1 from "../assets/Thumbnail-1.jpeg";
+import Thumbnail2 from "../assets/Thumbnail-2.jpeg";
+import Thumbnail3 from "../assets/Thumbnail-3.jpeg";
 
 export const companyInfo = {
   name: "Royal Realities Mysuru",
@@ -35,17 +40,30 @@ export const projects = [
   {
     id: 1,
     name: "Royal Retreat",
-    location: "Mysore Road",
+    location: "Lalithadripuram",
     tagline: "Signature Living at Its Best",
     image: Project1,
     status: "ongoing",
     description: "Premium plotted development with world-class amenities",
     gallery: [
-     
+
     ],
-     videos: [
-      video1,
-      video2,
+    videos: [
+      {
+        src: video1,
+        title: "Site Progress 1",
+        thumbnail: Thumbnail1,
+      },
+      {
+        src: video2,
+        title: "Site Progress 2",
+        thumbnail: Thumbnail2,
+      },
+      {
+        src: video3,
+        title: "Site Progress 3",
+        thumbnail: Thumbnail3,
+      },
     ]
 
   },
@@ -56,7 +74,7 @@ export const projects = [
     tagline: "Unearth the Magic of Our Farm Land",
     image: Project2,
     status: "ongoing",
-    description: "Agricultural plots with rich soil and excellent connectivity"
+    description: "Connected to the city, close to nature."
   },
   // {
   //   id: 3,
@@ -116,7 +134,7 @@ export const testimonials = [
     review: "Luxury locations, genuine pricing, and excellent service. One of the best real estate brands in Mysuru.",
     rating: 5
   },
-   {
+  {
     id: 5,
     name: "Sairaj",
     image: Sairaj,
@@ -166,12 +184,12 @@ export const faqs = [
     question: "How can I book a site?",
     answer: "You can contact our sales team directly through phone, WhatsApp, or the enquiry form on our website."
   },
-   {
+  {
     id: 9,
     question: "Why choose Royal Realities Mysuru?",
     answer: "We focus on trusted transactions, premium locations, transparent dealings, and customer satisfaction."
   },
-   {
+  {
     id: 10,
     question: "Can NRIs invest in your projects?",
     answer: "Yes, NRIs can invest in our properties as per applicable government regulations."

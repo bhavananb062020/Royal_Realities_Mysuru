@@ -6,19 +6,17 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useEffect } from "react";
 
-import Tumbnail1 from "../assets/Tumbnail-2.jpeg";
-import Tumbnail2 from "../assets/Tumbnail-1.jpeg";
 
 const ProjectDetails = () => {
     const { id } = useParams();
     const navigate = useNavigate();
     useEffect(() => {
-    window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "auto",
-    });
-}, [id]);
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "auto",
+        });
+    }, [id]);
     const project = projects.find(
         (p) => p.id.toString() === id
     );
@@ -30,7 +28,7 @@ const ProjectDetails = () => {
             </div>
         );
     }
-    const thumbnails = [Tumbnail1, Tumbnail2];
+
     return (
         <>
             <Header />
@@ -149,57 +147,73 @@ const ProjectDetails = () => {
 
                     )}
 
-                    {/* Videos */}
-
-                    {project.videos && project.videos.length > 0 && (
-
-                        <section className="mb-24">
-
+                    {/* Project Videos */}
+                    {project.videos?.length > 0 && (
+                        <section className="py-16">
                             <div className="text-center mb-12">
-
                                 <h2 className="text-4xl font-bold text-gray-900">
                                     Project Videos
                                 </h2>
-
-                                <div className="w-20 h-1 bg-amber-500 mx-auto rounded-full mt-3"></div>
-
+                                <div className="w-20 h-1 bg-amber-500 mx-auto mt-3 rounded-full"></div>
                             </div>
 
-                            <div className="flex justify-center flex-wrap gap-10">
+                            {/* First Row */}
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-4xl mx-auto">
 
-                                {project.videos.map((video, index) => (
-
+                                {project.videos.slice(0, 2).map((video, index) => (
                                     <div
                                         key={index}
-                                        className="bg-white rounded-3xl shadow-xl overflow-hidden w-[340px] hover:shadow-2xl transition duration-300 hover:-translate-y-2"
+                                        className="bg-white rounded-3xl shadow-xl p-6 flex flex-col items-center hover:shadow-2xl transition duration-300"
                                     >
 
                                         <video
                                             controls
-                                            playsInline
-                                            preload="metadata"
-                                            className="w-full h-auto"
-                                            poster={thumbnails[index]}
+                                            poster={video.thumbnail}
+                                            className="rounded-2xl w-full max-w-[280px] h-[500px] object-cover"
                                         >
-                                            <source src={video} type="video/mp4" />
+                                            <source src={video.src} type="video/mp4" />
                                         </video>
 
-                                        <div className="p-5 text-center">
-
-                                            <h3 className="text-lg font-semibold text-gray-800">
-                                                Site Progress {index + 1}
-                                            </h3>
-
-                                        </div>
+                                        <h3 className="mt-5 text-lg font-semibold text-gray-800">
+                                            {video.title}
+                                        </h3>
 
                                     </div>
-
                                 ))}
 
                             </div>
 
-                        </section>
+                            {/* Third Video */}
+                            {project.videos.length > 2 && (
+                                <div className="mt-12 flex justify-center">
 
+                                    <div className="bg-white rounded-3xl shadow-xl p-6 w-full max-w-3xl hover:shadow-2xl transition duration-300">
+
+                                        <div className="flex justify-center">
+
+                                            <video
+                                                controls
+                                                poster={project.videos[2].thumbnail}
+                                                className="rounded-2xl w-full max-w-[650px] h-[340px] object-cover"
+                                            >
+                                                <source
+                                                    src={project.videos[2].src}
+                                                    type="video/mp4"
+                                                />
+                                            </video>
+
+                                        </div>
+
+                                        <h3 className="mt-5 text-center text-lg font-semibold text-gray-800">
+                                            {project.videos[2].title}
+                                        </h3>
+
+                                    </div>
+
+                                </div>
+                            )}
+
+                        </section>
                     )}
 
                 </div>
