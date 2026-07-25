@@ -26,6 +26,17 @@ import Thumbnail1 from "../assets/Thumbnail-1.jpeg";
 import Thumbnail2 from "../assets/Thumbnail-2.jpeg";
 import Thumbnail3 from "../assets/Thumbnail-3.jpeg";
 
+import Enclave1 from "../assets/Project2-I1.jpeg";
+import Enclave2 from "../assets/Project2-I2.jpeg";
+import Enclave3 from "../assets/Project2-I3.jpeg";
+import Enclave4 from "../assets/Project2-I4.jpeg";
+import Enclave5 from "../assets/Project2-I5.jpeg";
+import Enclave6 from "../assets/Project2-I6.jpeg";
+import Enclave7 from "../assets/Project2-I7.jpeg";
+import Enclave8 from "../assets/Project2-I8.jpeg";
+import Enclave9 from "../assets/Project2-I9.jpeg";
+import Enclave10 from "../assets/Project2-I10.jpeg";
+
 export const companyInfo = {
   name: "Royal Realities Mysuru",
   tagline: "Where Plots Transform into Destinies",
@@ -74,7 +85,19 @@ export const projects = [
     tagline: "Unearth the Magic of Our Farm Land",
     image: Project2,
     status: "ongoing",
-    description: "Connected to the city, close to nature."
+    description: "Connected to the city, close to nature.",
+    gallery: [
+    Enclave1,
+    Enclave2,
+    Enclave3,
+    Enclave4,
+    Enclave5,
+    Enclave6,
+    Enclave7,
+    Enclave8,
+    Enclave9,
+    Enclave10,
+  ],
   },
   // {
   //   id: 3,
