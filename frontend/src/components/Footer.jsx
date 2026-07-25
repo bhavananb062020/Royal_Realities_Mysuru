@@ -41,12 +41,12 @@ const Footer = () => {
           {/* RIGHT SOCIAL ICONS */}
           <div className="flex space-x-6 mt-10 md:mt-0">
 
-            <a
+            {/* <a
               href="#"
               className="bg-white w-12 h-12 flex items-center justify-center rounded-full hover:scale-110 transition"
             >
               <Facebook className="text-blue-600 w-6 h-6" />
-            </a>
+            </a> */}
 
             <a
               href="https://www.linkedin.com/company/royal-realities-mysuru/"
@@ -57,12 +57,12 @@ const Footer = () => {
               <Linkedin className="text-blue-700 w-6 h-6" />
             </a>
 
-            <a
+            {/* <a
               href="#"
               className="bg-white w-12 h-12 flex items-center justify-center rounded-full hover:scale-110 transition"
             >
               <Youtube className="text-red-600 w-6 h-6" />
-            </a>
+            </a> */}
 
             <a
               href="https://instagram.com/royal_realities" target="_blank"

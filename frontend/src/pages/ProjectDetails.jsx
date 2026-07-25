@@ -157,54 +157,85 @@ const ProjectDetails = () => {
                                 <div className="w-20 h-1 bg-amber-500 mx-auto mt-3 rounded-full"></div>
                             </div>
 
-                            {/* First Row */}
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-4xl mx-auto">
+                            {/* Top Row */}
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
 
                                 {project.videos.slice(0, 2).map((video, index) => (
-                                    <div
-                                        key={index}
-                                        className="bg-white rounded-3xl shadow-xl p-6 flex flex-col items-center hover:shadow-2xl transition duration-300"
-                                    >
+                                    <div key={index} className="flex justify-center">
 
-                                        <video
-                                            controls
-                                            poster={video.thumbnail}
-                                            className="rounded-2xl w-full max-w-[280px] h-[500px] object-cover"
+                                        <div
+                                            className="
+              flex flex-col items-center
+              lg:bg-white
+              lg:px-8
+              lg:py-6
+              lg:rounded-3xl
+              lg:shadow-xl
+              lg:w-[420px]
+              transition-all duration-300
+            "
                                         >
-                                            <source src={video.src} type="video/mp4" />
-                                        </video>
 
-                                        <h3 className="mt-5 text-lg font-semibold text-gray-800">
-                                            {video.title}
-                                        </h3>
+                                            <video
+                                                controls
+                                                poster={video.thumbnail}
+                                                className="
+                rounded-2xl
+                w-full
+                h-[540px]
+                object-cover
+              "
+                                            >
+                                                <source src={video.src} type="video/mp4" />
+                                                Your browser does not support the video tag.
+                                            </video>
+
+                                            <h3 className="mt-5 text-xl font-semibold text-gray-800">
+                                                {video.title}
+                                            </h3>
+
+                                        </div>
 
                                     </div>
                                 ))}
 
                             </div>
 
-                            {/* Third Video */}
+                            {/* Bottom Row */}
                             {project.videos.length > 2 && (
                                 <div className="mt-12 flex justify-center">
 
-                                    <div className="bg-white rounded-3xl shadow-xl p-6 w-full max-w-3xl hover:shadow-2xl transition duration-300">
+                                    <div
+                                        className="
+            flex flex-col items-center
+            lg:bg-white
+            lg:px-8
+            lg:py-6
+            lg:rounded-3xl
+            lg:shadow-xl
+            lg:w-[820px]
+            transition-all duration-300
+          "
+                                    >
 
-                                        <div className="flex justify-center">
+                                        <video
+                                            controls
+                                            poster={project.videos[2].thumbnail}
+                                            className="
+              rounded-2xl
+              w-full
+              h-[400px]
+              object-cover
+            "
+                                        >
+                                            <source
+                                                src={project.videos[2].src}
+                                                type="video/mp4"
+                                            />
+                                            Your browser does not support the video tag.
+                                        </video>
 
-                                            <video
-                                                controls
-                                                poster={project.videos[2].thumbnail}
-                                                className="rounded-2xl w-full max-w-[650px] h-[340px] object-cover"
-                                            >
-                                                <source
-                                                    src={project.videos[2].src}
-                                                    type="video/mp4"
-                                                />
-                                            </video>
-
-                                        </div>
-
-                                        <h3 className="mt-5 text-center text-lg font-semibold text-gray-800">
+                                        <h3 className="mt-5 text-xl font-semibold text-gray-800">
                                             {project.videos[2].title}
                                         </h3>
 
@@ -215,7 +246,6 @@ const ProjectDetails = () => {
 
                         </section>
                     )}
-
                 </div>
 
             </div>
