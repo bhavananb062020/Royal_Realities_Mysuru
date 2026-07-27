@@ -37,6 +37,8 @@ import Enclave8 from "../assets/Project2-I8.jpeg";
 import Enclave9 from "../assets/Project2-I9.jpeg";
 import Enclave10 from "../assets/Project2-I10.jpeg";
 
+import UpcomingProject1 from "../assets/upcoming-project-2.jpg";
+
 export const companyInfo = {
   name: "Royal Realities Mysuru",
   tagline: "Where Plots Transform into Destinies",
@@ -113,7 +115,7 @@ export const projects = [
     name: "Royal Meadows",
     location: "Murdagahalli",
     tagline: "A Fresh Beginning Amidst Nature",
-    image: "https://images.pexels.com/photos/8470806/pexels-photo-8470806.jpeg",
+    image: UpcomingProject1,
     status: "upcoming",
     description: "Thoughtfully planned green residential plots, coming soon to a prime location.",
     gallery: [],
