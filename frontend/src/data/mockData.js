@@ -44,7 +44,7 @@ export const companyInfo = {
   tagline: "Where Plots Transform into Destinies",
   phone: "+91 6361766997",
   email: "contact.royalrealitiesmysuru@gmail.com",
-  address: "Maharaja complex, Opp to sub urban bus stop, mysuru",
+  address: "Maharaja complex, Opp to sub urban bus stop, Mysuru",
   satisfiedClients: 1500,
   yearsOfExperience: 22
 };
