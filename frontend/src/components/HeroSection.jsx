@@ -182,7 +182,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen w-full flex flex-col"
+      className="relative min-h-[820px] md:min-h-screen w-full flex flex-col"
     >
       {/* Background (own layer, so overflow-hidden never clips text below) */}
       <div className="absolute inset-0 overflow-hidden">
@@ -254,7 +254,7 @@ const HeroSection = () => {
 
       {/* FORM */}
       <div className="relative z-20">
-        <div className="bg-black/80 backdrop-blur-sm py-6 px-4 md:px-10 border-t border-[#D4AF37]/30">
+        <div className="mx-4 md:mx-0 rounded-2xl bg-black/80 backdrop-blur-md py-6 px-5 md:px-10 border border-[#D4AF37]/30">
           <form
             onSubmit={handleSubmit}
             className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 md:gap-6 items-start"
