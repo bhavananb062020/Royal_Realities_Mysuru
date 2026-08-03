@@ -31,6 +31,9 @@ const ProjectDetails = () => {
 
     return (
         <>
+          {/* <Helmet>
+            <meta name="robots" content="noindex, follow" />
+        </Helmet> */}
             <Header />
 
             <div className="bg-gray-50 min-h-screen">

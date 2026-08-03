@@ -1,39 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Home -->
   <url>
     <loc>https://royalrealitiesmysuru.in/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <url>
-    <loc>https://royalrealitiesmysuru.in/project/1</loc>
-    <lastmod>2026-08-02</lastmod>
+  <!-- Individual Projects -->
+  <!-- <url>
+    <loc>https://royalrealitiesmysuru.in/project/oyal-retreat</loc>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://royalrealitiesmysuru.in/project/2</loc>
-    <lastmod>2026-08-02</lastmod>
+    <loc>https://royalrealitiesmysuru.in/project/royal-enclave</loc>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://royalrealitiesmysuru.in/project/3</loc>
-    <lastmod>2026-08-02</lastmod>
+    <loc>https://royalrealitiesmysuru.in/project/royal-vista</loc>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://royalrealitiesmysuru.in/project/4</loc>
-    <lastmod>2026-08-02</lastmod>
+    <loc>https://royalrealitiesmysuru.in/project/royal-meadows</loc>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-  </url>
+  </url> -->
 
 </urlset>
