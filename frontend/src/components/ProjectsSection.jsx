@@ -27,7 +27,7 @@ const ProjectCard = ({ project, onExplore }) => (
       <h4 className="text-xl font-semibold text-gray-800 mb-2">{project.tagline}</h4>
       <p className="text-gray-600 mb-4">{project.description}</p>
       <Button
-        onClick={() => onExplore(project.id)}
+        onClick={() => onExplore(project.slug)}
         className="w-full bg-amber-500 hover:bg-amber-600 text-white"
       >
         EXPLORE
@@ -39,8 +39,8 @@ const ProjectCard = ({ project, onExplore }) => (
 const ProjectsSection = () => {
   const navigate = useNavigate();
 
-  const handleExplore = (id) => {
-    navigate(`/project/${id}`);
+  const handleExplore = (slug) => {
+    navigate(`/project/${slug}`);
   };
 
   const completedProjects = projects.filter((p) => p.status === 'completed');

@@ -5,10 +5,10 @@ import { projects } from "../data/mockData";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useEffect } from "react";
-
+import { Helmet } from "react-helmet-async";
 
 const ProjectDetails = () => {
-    const { id } = useParams();
+    const { slug } = useParams();
     const navigate = useNavigate();
     useEffect(() => {
         window.scrollTo({
@@ -16,9 +16,9 @@ const ProjectDetails = () => {
             left: 0,
             behavior: "auto",
         });
-    }, [id]);
+    }, [slug]);
     const project = projects.find(
-        (p) => p.id.toString() === id
+        (p) => p.slug === slug
     );
 
     if (!project) {

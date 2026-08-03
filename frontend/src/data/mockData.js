@@ -53,6 +53,7 @@ export const projects = [
   {
     id: 1,
     name: "Royal Retreat",
+    slug: "royal-retreat",
     location: "Lalithadripuram",
     tagline: "Signature Living at Its Best",
     image: Project1,
@@ -80,6 +81,7 @@ export const projects = [
   {
     id: 2,
     name: "Royal Enclave",
+    slug: "royal-enclave",
     location: "Varuna",
     tagline: "Unearth the Magic of Our Farm Land",
     image: Project2,
@@ -102,6 +104,7 @@ export const projects = [
   {
     id: 3,
     name: "Royal Vista",
+    slug: "royal-vista",
     location: "Ilwala",
     tagline: "Where Every View Feels Like Home",
     image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
@@ -113,6 +116,7 @@ export const projects = [
   {
     id: 4,
     name: "Royal Meadows",
+    slug: "royal-meadows",
     location: "Murdagahalli",
     tagline: "A Fresh Beginning Amidst Nature",
     image: UpcomingProject1,
