@@ -182,7 +182,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-[820px] md:min-h-screen w-full flex flex-col"
+      className="relative h-[100vh] md:min-h-screen w-full flex flex-col"
     >
       {/* Background (own layer, so overflow-hidden never clips text below) */}
       <div className="absolute inset-0 overflow-hidden">
@@ -213,10 +213,10 @@ const HeroSection = () => {
       </div>
 
       {/* HERO TEXT — normal flow, grows with content, never gets cut off */}
-      <div className="relative z-20 flex-1 flex items-center px-6 md:px-16 pt-28 md:pt-24 pb-6">
-        <div className="text-white max-w-2xl">
+      <div className="relative z-20 flex-1 flex items-start md:items-center px-6 md:px-16 pt-24 md:pt-24">
+       <div className="text-white max-w-[260px] mt-10 md:mt-0 md:max-w-2xl">
           <h1
-            className="font-semibold leading-[1.15] tracking-wide text-[clamp(1.6rem,4.6vw,2.9rem)]"
+            className="font-semibold leading-tight tracking-wide text-[2.6rem] md:text-[4rem]"
             style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             Royal Realities
@@ -230,7 +230,7 @@ const HeroSection = () => {
             Premium Residential Plots
           </p>
 
-          <p className="mt-1 text-[clamp(0.75rem,1.6vw,1.15rem)] tracking-[3px] sm:tracking-[5px] font-medium text-[#D4AF37] uppercase">
+          <p className="mt-2 text-sm md:text-lg tracking-[5px] font-medium text-[#D4AF37] uppercase">
             Turning Land Into Legacy
           </p>
         </div>
@@ -253,11 +253,11 @@ const HeroSection = () => {
       </div>
 
       {/* FORM */}
-      <div className="relative z-20">
-        <div className="mx-4 md:mx-0 rounded-2xl bg-black/80 backdrop-blur-md py-6 px-5 md:px-10 border border-[#D4AF37]/30">
+      <div className="relative z-30 -mt-40 md:mt-0 px-4 md:px-0">
+        <div className="mx-5 md:mx-0 rounded-2xl bg-black/80 backdrop-blur-md py-4 px-5 md:px-10 border border-[#D4AF37]/30">
           <form
             onSubmit={handleSubmit}
-            className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 md:gap-6 items-start"
+            className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-3 md:gap-6 items-start"
           >
             {/* Name */}
             <div className="w-full">
