@@ -370,7 +370,7 @@ const HeroSection = () => {
         </div>
 
         {/* TRUST BADGES STRIP */}
-        <div className="bg-black/90 px-4 md:px-10 py-6 border-t border-white/10">
+        <div className="hidden md:block bg-black/90 px-4 md:px-10 py-6 border-t border-white/10">
           <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {features.map(({ icon: Icon, title, desc }) => (
               <div key={title} className="flex items-center gap-4">
