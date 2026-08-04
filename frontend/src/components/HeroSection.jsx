@@ -182,7 +182,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-[100svh] md:min-h-screen w-full flex flex-col overflow-hidden"
+      className="relative h-[100svh] md:min-h-screen w-full flex flex-col overflow-hidden"
     >
       {/* Background (own layer, so overflow-hidden never clips text below) */}
       <div className="absolute inset-0 overflow-hidden">
