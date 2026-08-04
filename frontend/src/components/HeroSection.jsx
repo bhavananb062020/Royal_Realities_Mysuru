@@ -216,7 +216,7 @@ const HeroSection = () => {
       <div className="relative z-20 flex-1 flex items-start md:items-center px-6 md:px-16 pt-24 md:pt-24">
        <div className="text-white max-w-[260px] mt-10 md:mt-0 md:max-w-2xl">
           <h1
-            className="font-semibold leading-tight tracking-wide text-[2.6rem] md:text-[4rem]"
+            className="font-semibold leading-[1.1] tracking-wide text-[2rem] md:text-[3rem] lg:text-[2.8rem]"
             style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             Royal Realities
@@ -226,28 +226,28 @@ const HeroSection = () => {
 
           <div className="w-20 sm:w-24 h-[3px] bg-[#D4AF37] mt-4 mb-2 sm:mt-5 sm:mb-2"></div>
 
-          <p className="text-[clamp(0.9rem,2vw,1.25rem)] font-light tracking-wide text-white/90">
+          {/* <p className="text-[clamp(0.9rem,2vw,1.25rem)] font-light tracking-wide text-white/90">
             Premium Residential Plots
-          </p>
+          </p> */}
 
-          <p className="mt-2 text-sm md:text-lg tracking-[5px] font-medium text-[#D4AF37] uppercase">
+          <p className="mt-2 text-sm md:text-lg tracking-[5px] font-medium text-[#f8c317] uppercase">
             Turning Land Into Legacy
           </p>
         </div>
       </div>
 
-      {/* CONTACT ICONS */}
-      <div className="fixed right-4 md:right-0 top-1/2 -translate-y-1/2 z-40 flex flex-col gap-3">
+       {/* CONTACT ICONS */}
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 z-40 flex flex-col gap-3">
         <a
           href="https://instagram.com/royal_realities"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white p-3 rounded-full"
+          className="bg-white p-3 shadow"
         >
-          <Instagram className="w-5 h-5 md:w-6 md:h-6 text-black" strokeWidth={1.75} />
+          <Instagram className="w-5 h-5 md:w-6 md:h-6 text-black" />
         </a>
 
-        <a href="tel:6361766997" className="bg-white p-3 rounded-full">
+        <a href="tel:6361766997" className="bg-white p-3 shadow">
           <img src={callIcon} className="w-5 h-5 md:w-6 md:h-6" alt="Call" />
         </a>
       </div>
