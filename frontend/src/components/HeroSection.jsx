@@ -182,14 +182,14 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative h-[100vh] md:min-h-screen w-full flex flex-col"
+      className="relative min-h-[100svh] md:min-h-screen w-full flex flex-col overflow-hidden"
     >
       {/* Background (own layer, so overflow-hidden never clips text below) */}
       <div className="absolute inset-0 overflow-hidden">
         <img
           src="https://images.unsplash.com/photo-1500382017468-9049fed747ef"
 
-          className="absolute inset-0 w-full h-full object-cover"
+           className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none select-none"
           alt="Sunrise over the plots at Royal Realities Mysuru"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-black/85"></div>
