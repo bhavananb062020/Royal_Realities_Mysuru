@@ -24,7 +24,7 @@
     <priority>0.8</priority>
   </url>
 
-  <url>
+  <!-- <url>
     <loc>https://royalrealitiesmysuru.in/project/royal-vista</loc>
     <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -36,6 +36,6 @@
     <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
+  </url> -->
 
 </urlset>
