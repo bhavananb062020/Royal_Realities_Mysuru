@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import {
   Menu,
-  X,
-  Instagram,
   User,
   Mail,
   Phone,
@@ -11,38 +9,22 @@ import {
   MapPin,
   Sprout,
   Handshake,
+  Instagram,
 } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Checkbox } from "./ui/checkbox";
 import { useToast } from "../hooks/use-toast";
+import { X } from "lucide-react";
+import whatsappIcon from "../assets/Whatsapp-icon.png";
 import * as yup from "yup";
 
 import logo from "../assets/logo-removebg.png";
-// import whatsappIcon from "../assets/whatsappIcon.png";
-import callIcon from "../assets/callIcon.png";
-// import heroBg from "../assets/hero-bg.png";
-
-const validationSchema = yup.object().shape({
-  name: yup.string().trim().required("Name is required"),
-  email: yup
-    .string()
-    .trim()
-    .email("Email is required")
-    .required("Email is required"),
-  phone: yup
-    .string()
-    .trim()
-    .matches(/^[0-9]{10}$/, "Enter valid 10-digit phone number")
-    .required("Phone number is required"),
-  acceptTerms: yup
-    .boolean()
-    .oneOf([true], "Please accept the terms & conditions"),
-});
 
 const HeroSection = () => {
   const { toast } = useToast();
   const [menuOpen, setMenuOpen] = useState(false);
+
 
   // Load an elegant serif display font for the headline
   React.useEffect(() => {
@@ -68,6 +50,22 @@ const HeroSection = () => {
     phone: "",
     acceptTerms: "",
   });
+  const validationSchema = yup.object().shape({
+  name: yup.string().trim().required("Name is required"),
+  email: yup
+    .string()
+    .trim()
+    .email("Email is required")
+    .required("Email is required"),
+  phone: yup
+    .string()
+    .trim()
+    .matches(/^[0-9]{10}$/, "Enter valid 10-digit phone number")
+    .required("Phone number is required"),
+  acceptTerms: yup
+    .boolean()
+    .oneOf([true], "Please accept the terms & conditions"),
+});
 
   const validateForm = async () => {
     try {
@@ -118,8 +116,9 @@ const HeroSection = () => {
         },
         body: JSON.stringify(formData),
       });
-
+      console.log(res.status);
       const data = await res.json();
+      console.log(data);
 
       if (res.ok) {
         toast({
@@ -189,7 +188,7 @@ const HeroSection = () => {
         <img
           src="https://images.unsplash.com/photo-1500382017468-9049fed747ef"
 
-           className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none select-none"
+          className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none select-none"
           alt="Sunrise over the plots at Royal Realities Mysuru"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-black/85"></div>
@@ -214,7 +213,7 @@ const HeroSection = () => {
 
       {/* HERO TEXT — normal flow, grows with content, never gets cut off */}
       <div className="relative z-20 flex-1 flex items-start md:items-center px-6 md:px-16 pt-24 md:pt-24">
-       <div className="text-white max-w-[260px] mt-10 md:mt-0 md:max-w-2xl">
+        <div className="text-white max-w-[260px] mt-10 md:mt-0 md:max-w-2xl">
           <h1
             className="font-semibold leading-[1.1] tracking-wide text-[2rem] md:text-[3rem] lg:text-[2.8rem]"
             style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
@@ -236,24 +235,38 @@ const HeroSection = () => {
         </div>
       </div>
 
-       {/* CONTACT ICONS */}
-      <div className="fixed right-0.5 top-1/2 -translate-y-1/2 z-[999] flex flex-col gap-3">
+      <div className="fixed right-1 top-1/2 -translate-y-1/2 z-[999] flex flex-col gap-3">
+
+        {/* Instagram */}
         <a
           href="https://instagram.com/royal_realities"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white p-3 shadow"
+          className="w-12 h-12 bg-white  shadow-lg flex items-center justify-center hover:shadow-xl hover:scale-105 transition-all duration-300"
         >
-          <Instagram className="w-5 h-5 md:w-6 md:h-6 text-black" />
+          <Instagram className="w-7 h-7 text-black" />
         </a>
 
-        <a href="tel:6361766997" className="bg-white p-3 shadow">
-          <img src={callIcon} className="w-5 h-5 md:w-6 md:h-6" alt="Call" />
+        {/* WhatsApp */}
+        <a
+          href="https://wa.me/916361766997"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-12 h-12 bg-white shadow-lg flex items-center justify-center hover:shadow-xl hover:scale-105 transition-all duration-300"
+        >
+          <img
+            src={whatsappIcon}
+            alt="WhatsApp"
+            className="w-7 h-7"
+          />
         </a>
+
       </div>
-
       {/* FORM */}
-      <div className="relative z-30 -mt-40 md:mt-0 px-4 md:px-0">
+      <div
+        id="enquiry-form"
+        className="relative z-30 -mt-40 md:mt-0 px-4 md:px-0"
+      >
         <div className="mx-5 md:mx-0 rounded-2xl bg-black/80 backdrop-blur-md py-4 px-5 md:px-10 border border-[#D4AF37]/30">
           <form
             onSubmit={handleSubmit}
@@ -416,6 +429,7 @@ const HeroSection = () => {
           </a>
         </div>
       )}
+
     </section>
   );
 };

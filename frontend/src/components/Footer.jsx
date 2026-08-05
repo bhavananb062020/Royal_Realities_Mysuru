@@ -1,19 +1,21 @@
-import React from "react";
 import logo from "../assets/logo-removebg.png";
 import {
-  Facebook,
   Linkedin,
-  Youtube,
-  Instagram
+  Instagram,
+  MessageSquareMore,
 } from "lucide-react";
+import React, { useState } from "react";
+import EnquiryModal from "./EnquiryModal";
 
 const Footer = () => {
+  const [showEnquiryModal, setShowEnquiryModal] = useState(false);
+
   return (
     <footer className="bg-black text-white">
 
       <div className="max-w-7xl mx-auto px-6 py-8">
 
-        <div className="flex flex-col md:flex-row md:justify-between md:items-center">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
 
           {/* LEFT SECTION */}
           <div>
@@ -39,7 +41,7 @@ const Footer = () => {
           </div>
 
           {/* RIGHT SOCIAL ICONS */}
-          <div className="flex space-x-6 mt-10 md:mt-0">
+          <div className="flex items-center justify-center md:justify-end gap-5 mt-8 md:mt-0">
 
             {/* <a
               href="#"
@@ -52,7 +54,7 @@ const Footer = () => {
               href="https://www.linkedin.com/company/royal-realities-mysuru/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white w-12 h-12 flex items-center justify-center rounded-full hover:scale-110 transition"
+              className="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-md hover:scale-110 hover:shadow-lg transition-all duration-300"
             >
               <Linkedin className="text-blue-700 w-6 h-6" />
             </a>
@@ -66,10 +68,18 @@ const Footer = () => {
 
             <a
               href="https://instagram.com/royal_realities" target="_blank"
-              className="bg-white w-12 h-12 flex items-center justify-center rounded-full hover:scale-110 transition"
+              className="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-md hover:scale-110 hover:shadow-lg transition-all duration-300"
             >
               <Instagram className="text-pink-600 w-6 h-6" />
             </a>
+
+            {/* Enquiry */}
+            <button
+              onClick={() => setShowEnquiryModal(true)}
+              className="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-md hover:scale-110 hover:shadow-lg transition-all duration-300"
+            >
+              <MessageSquareMore className="w-6 h-6 text-[#080703]" />
+            </button>
 
           </div>
 
@@ -86,6 +96,10 @@ const Footer = () => {
 
       </div>
 
+      <EnquiryModal
+        open={showEnquiryModal}
+        onClose={() => setShowEnquiryModal(false)}
+      />
     </footer>
   );
 };

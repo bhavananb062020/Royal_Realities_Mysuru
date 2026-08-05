@@ -13,8 +13,9 @@ const schema = yup.object().shape({
   email: yup.string().email("Enter valid email").required("Email is required"),
   phone: yup
     .string()
+    .trim()
     .matches(/^[0-9]{10}$/, "Enter valid 10-digit phone number")
-    .required("Phone is required"),
+    .required("Phone number is required"),
   message: yup.string().required("Message is required"),
   acceptTerms: yup.boolean().oneOf([true], "Please accept terms"),
 });
@@ -184,12 +185,28 @@ const ContactSection = () => {
               {/* PHONE */}
               <div>
                 <Input
-                  type="tel"
                   placeholder="Your Phone"
+                  type="tel"
+                  inputMode="numeric"
+                  maxLength={10}
                   value={formData.phone}
+                  onKeyDown={(e) => {
+                    if (["e", "E", "+", "-", "."].includes(e.key)) {
+                      e.preventDefault();
+                    }
+                  }}
                   onChange={(e) => {
-                    setFormData({ ...formData, phone: e.target.value });
-                    setErrors({ ...errors, phone: "" });
+                    const value = e.target.value.replace(/\D/g, "").slice(0, 10);
+
+                    setFormData({
+                      ...formData,
+                      phone: value,
+                    });
+
+                    setErrors({
+                      ...errors,
+                      phone: "",
+                    });
                   }}
                 />
                 {errors.phone && (
