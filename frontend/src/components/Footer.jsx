@@ -15,18 +15,17 @@ const Footer = () => {
 
       <div className="max-w-7xl mx-auto px-6 py-8">
 
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+        <div className="flex flex-col md:flex-row justify-between md:items-center gap-8">
 
           {/* LEFT SECTION */}
-          <div>
-
+          <div className="w-full md:w-auto text-left">
             <img
               src={logo}
-              alt="Ashwasurya Realities"
-              className="h-32 w-32 mb-8"
+              alt="Royal Realities Mysuru"
+              className="h-28 w-28 md:h-32 md:w-32 mb-6"
             />
 
-            <p className="text-gray-300 text-sm uppercase tracking-wide mb-4">
+            <p className="text-gray-300 text-sm uppercase tracking-wide mb-3">
               Contact Info
             </p>
 
@@ -34,14 +33,13 @@ const Footer = () => {
               +91 6361766997
             </p>
 
-            <p className="text-gray-300">
+            <p className="text-gray-300 break-all">
               contact.royalrealitiesmysuru@gmail.com
             </p>
-
           </div>
 
           {/* RIGHT SOCIAL ICONS */}
-          <div className="flex items-center justify-center md:justify-end gap-5 mt-8 md:mt-0">
+         <div className="w-full flex justify-start ml-2 md:ml-0 items-center gap-4 mt-6">
 
             {/* <a
               href="#"
