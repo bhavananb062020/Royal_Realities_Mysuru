@@ -15,10 +15,10 @@ const Footer = () => {
 
       <div className="max-w-7xl mx-auto px-6 py-8">
 
-        <div className="flex flex-col md:flex-row justify-between md:items-center gap-8">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
 
           {/* LEFT SECTION */}
-          <div className="w-full md:w-auto text-left">
+          <div className="w-full md:w-1/2 text-left">
             <img
               src={logo}
               alt="Royal Realities Mysuru"
@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
 
           {/* RIGHT SOCIAL ICONS */}
-         <div className="w-full flex justify-start ml-2 md:ml-0 items-center gap-4 mt-6">
+         <div className="w-full md:w-1/2 flex justify-start md:justify-end items-end gap-4 mt-6 md:mt-0">
 
             {/* <a
               href="#"
