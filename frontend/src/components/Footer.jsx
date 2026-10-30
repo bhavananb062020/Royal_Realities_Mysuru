@@ -1,4 +1,4 @@
-import logo from "../assets/logo-removebg.png";
+import logo from "../assets/NewLogo.png";
 import {
   Linkedin,
   Instagram,

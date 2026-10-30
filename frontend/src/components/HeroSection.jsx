@@ -19,7 +19,7 @@ import { X } from "lucide-react";
 import whatsappIcon from "../assets/Whatsapp-icon.png";
 import * as yup from "yup";
 
-import logo from "../assets/logo-removebg.png";
+import logo from "../assets/NewLogo.png";
 
 const HeroSection = () => {
   const { toast } = useToast();
@@ -262,6 +262,7 @@ const HeroSection = () => {
         </a>
 
       </div>
+      
       {/* FORM */}
       <div
         id="enquiry-form"

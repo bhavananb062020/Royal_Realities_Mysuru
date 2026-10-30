@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
-import logo from "../assets/logo-removebg.png";
+import logo from "../assets/NewLogo.png";
 import { projects } from "../data/mockData";
 import Header from "../components/Header";
 import Footer from "../components/Footer";

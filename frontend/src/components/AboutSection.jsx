@@ -1,6 +1,6 @@
 import React from "react";
 import { companyInfo } from "../data/mockData";
-import logo from "../assets/Logo-about.png";
+import logo from "../assets/NewLogo.png";
 
 const AboutSection = () => {
   return (
